@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Fotogram</title>
+  <link rel="icon" type="image/x-icon" href="./img/fotogram/favicon_fotogram.png">
+  <script src="./script.js"></script>
+</head>
+
+<body onload="showSlides(slideIndex)">
+
+  <header class="headerDFlex">
+    <img class="headerImg" src="./img/fotogram/favicon_fotogram.png" alt="Logo Fotogram">
+    <h1>Fotogram</h1>
+  </header>
+
+  <main>
+    <div>
+      <h2 class="h2Gap">Your personal photo album</h2>
+
+      <div class="row">
+        <div class="column">
+          <img class="imgTest" src="./img/bird-7902319_1280.jpg" onclick="openModal();currentSlide(1)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/boat-7040754_1280.jpg" onclick="openModal();currentSlide(2)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/drop-3698073_1280.jpg" onclick="openModal();currentSlide(3)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/forest-7471935_1280.jpg" onclick="openModal();currentSlide(4)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/horses-7407805_1280.jpg" onclick="openModal();currentSlide(5)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/landscape-2979296_1280.jpg" onclick="openModal();currentSlide(6)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/lavender-7489530_1280.jpg" onclick="openModal();currentSlide(7)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/leaves-8413064_1280.jpg" onclick="openModal();currentSlide(8)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/moon-8579189_1280.jpg" onclick="openModal();currentSlide(9)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/mountains-3699372_1280.jpg" onclick="openModal();currentSlide(10)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/mountains-7558365_1280.jpg" onclick="openModal();currentSlide(11)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img class="imgTest" src="./img/water-lily-8253542_1280.jpg" onclick="openModal();currentSlide(12)"
+            class="hover-shadow cursor">
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 12</div>
+          <img class="imgModal" src="./img/bird-7902319_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 12</div>
+          <img class="imgModal" src="./img/boat-7040754_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 12</div>
+          <img class="imgModal" src="./img/drop-3698073_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 12</div>
+          <img class="imgModal" src="./img/forest-7471935_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 12</div>
+          <img class="imgModal" src="./img/horses-7407805_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 12</div>
+          <img class="imgModal" src="./img/landscape-2979296_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 12</div>
+          <img class="imgModal" src="./img/lavender-7489530_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 12</div>
+          <img class="imgModal" src="./img/leaves-8413064_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 12</div>
+          <img class="imgModal" src="./img/moon-8579189_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 12</div>
+          <img class="imgModal" src="./img/mountains-3699372_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 12</div>
+          <img class="imgModal" src="./img/mountains-7558365_1280.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">12 / 12</div>
+          <img class="imgModal" src="./img/water-lily-8253542_1280.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <img class="footer_imgTag" src="./img/fotogram/developer akademie-logo.png" alt="">
+    <p class="footer_pTag"> © 2024 von Wladislav Bender</p>
+  </footer>
+
+</body>
+
+</html>
